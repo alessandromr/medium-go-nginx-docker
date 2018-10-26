@@ -1,0 +1,13 @@
+
+version: "3.6"
+services:
+  goservice:
+    build: "."
+    ports:
+      - "8080"
+  nginx:
+    build: "./nginx"
+    ports:
+      - "80:80"
+    depends_on:
+      - "goservice"
