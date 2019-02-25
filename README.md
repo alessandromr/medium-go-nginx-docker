@@ -29,7 +29,7 @@ So when you need to re-compile the code you can follow this steps:
 - `docker-compose build`
 - `docker-compose up -d`
 
-To simplify this steps you can create a makefile and group this commands in a single one, or you can use this version: 
+To simplify this steps you can create a makefile and group this commands in a single one, or on *nix system you can use this version of the commands: 
 ```shell
-docker-compose down & docker-compose build & docker-compose up -d
+docker-compose down && docker-compose build && docker-compose up -d
 ```
